@@ -7,18 +7,20 @@
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-  }
-  
-  /* Table Design */
-  table {
+    padding: 20px; /* Added padding for spacing */
+}
+
+/* Table Design */
+table {
     width: 100%;
     border-collapse: collapse;
     font-family: "Roboto", sans-serif;
     color: #333333;
-  }
-  
-  /* Table Header Styling */
-  th {
+    overflow-x: auto; /* To allow horizontal scrolling for smaller screens */
+}
+
+/* Table Header Styling */
+th {
     background: linear-gradient(90deg, #4caf50, #81c784);
     color: white;
     font-weight: bold;
@@ -26,23 +28,23 @@
     letter-spacing: 0.05em;
     font-size: 16px;
     padding: 12px 10px;
-  }
-  
-  /* Table Row Styling */
-  td {
+}
+
+/* Table Row Styling */
+td {
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid #ddd;
     font-size: 14px;
-  }
-  
-  /* Table Row Hover Effect */
-  tr:hover {
+}
+
+/* Table Row Hover Effect */
+tr:hover {
     background-color: #f1f8e9;
-  }
-  
-  /* Button Styling */
-  .add-row-button {
+}
+
+/* Button Styling */
+.add-row-button {
     display: inline-block;
     margin: 20px;
     padding: 12px 24px;
@@ -57,35 +59,79 @@
     transition: background-color 0.3s ease, transform 0.2s ease;
     text-align: center;
     text-transform: uppercase;
-  }
-  
-  /* Button Hover Effect */
-  .add-row-button:hover {
+}
+
+/* Button Hover Effect */
+.add-row-button:hover {
     background-color: #0056b3;
     transform: translateY(-2px);
-  }
-  
-  /* Button Focus Effect */
-  .add-row-button:focus {
+}
+
+/* Button Focus Effect */
+.add-row-button:focus {
     outline: 3px solid #80d4ff;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
     .table-container {
-      width: 95%;
+        width: 95%;
+        padding: 10px; /* Slightly reduced padding for better fit */
     }
-  
+
+    /* Make the table font size smaller */
     th,
     td {
-      font-size: 12px;
-      padding: 8px;
+        font-size: 14px;
+        padding: 10px;
     }
-  
+
     .add-row-button {
-      width: 100%;
-      padding: 10px 0;
-      font-size: 12px;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 12px;
     }
-  }
-  
+}
+
+/* Mobile Design */
+@media (max-width: 768px) {
+    /* Make the table container take up more space */
+    .table-container {
+        width: 100%;
+        padding: 10px; /* Further reduced padding for smaller screens */
+    }
+
+    /* Adjust font sizes and padding for smaller devices */
+    th,
+    td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    /* Button with full width on mobile */
+    .add-row-button {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 12px;
+    }
+
+    /* For small screens, allow horizontal scroll for tables */
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+/* For very small mobile screens */
+@media (max-width: 480px) {
+    th,
+    td {
+        font-size: 10px; /* Smaller font for very small screens */
+        padding: 6px; /* Reduced padding */
+    }
+
+    .add-row-button {
+        font-size: 10px;
+        padding: 8px 0;
+    }
+}
