@@ -53,8 +53,8 @@ This will start the app and open it in your browser at http://localhost:3000.
 
 - Below is a preview of the table in action with the dropdown selections:
 
-    - ![table Screenshot](./public/table.png)
-    - ![table-1 Screenshot](./public/table-1.png)
+    - ![Table](./public/table.png)
+    - ![Table 1](./public/table-1.png)
 
 ## Components
 
