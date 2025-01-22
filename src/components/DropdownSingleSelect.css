@@ -1,0 +1,25 @@
+.single-select-dropdown {
+    font-family: "Roboto", sans-serif;
+    width: 200px;
+  }
+  
+  .single-select-dropdown-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #333333;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px 16px;
+  }
+  
+  .single-select-dropdown-input:focus {
+    outline: none;
+    border-color: #4caf50;
+  }
+  
